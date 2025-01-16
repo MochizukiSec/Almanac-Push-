@@ -27,15 +27,6 @@ func main() {
 	calendarClient := calendar.NewClient(cfg.CalendarAPI.Key)
 	pushService := push.NewService(cfg)
 
-	// 测试推送
-	if err := sendDailyAlmanac(calendarClient, pushService); err != nil {
-		logger.Printf("测试推送失败: %v", err)
-	} else {
-		logger.Println("测试推送成功")
-		// 测试成功后退出
-		return
-	}
-
 	// 创建定时任务
 	c := cron.New()
 	spec := fmt.Sprintf("%d %d * * *", cfg.PushTime.Minute, cfg.PushTime.Hour)

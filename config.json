@@ -3,10 +3,10 @@
         "key": "b4f9f55639bd4def834819030cb36455"
     },
     "push": {
-        "bark_key": "KKbRbRU6mABTgtVHW45h7f",
+        "bark_key": "",
         "bark_sound": "minuet.caf",
         "bark_group": "Almanac",
-        "wecom_bot_url": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1ab38821-7100-40ee-8219-cfa4496f6411‘",
+        "wecom_bot_url": "",
         "enabled_channels": ["bark", "wecom_bot"],
         "archive": true
     },
